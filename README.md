@@ -12,9 +12,7 @@ This image allows you to run BitlBee in a completelly containerized environment
 
 Run BitlBee listening in port 6667 with default config
 ```
-docker run \
-  -p 6667:6667 \
-  narfman0/docker-bitlbee -n
+docker run -p 6667:6667 narfman0/docker-bitlbee -n bitlbee
 ```
 
 Build container with
