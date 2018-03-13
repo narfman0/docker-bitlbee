@@ -15,6 +15,11 @@ Run BitlBee listening in port 6667 with default config
 docker run -p 6667:6667 narfman0/docker-bitlbee -n bitlbee
 ```
 
+You may wish to add a local mount (and accompanying chown possible) with
+```
+ -v $(pwd)/bitlbee:/var/lib/bitlbee
+```
+
 Build container with
 ```
 docker build . -t bitlbee
