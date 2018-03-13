@@ -8,13 +8,18 @@ additional MSN/AIM/whatever client.
 
 This image allows you to run BitlBee in a completelly containerized environment
 
-## How to use this image
+## Usage
 
 Run BitlBee listening in port 6667 with default config
 ```
 docker run \
   -p 6667:6667 \
   narfman0/docker-bitlbee -n
+```
+
+Build container with
+```
+docker build . -t bitlbee
 ```
 
 ## License
