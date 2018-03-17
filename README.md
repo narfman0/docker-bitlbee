@@ -18,7 +18,7 @@ docker run -p 6667:6667 -v $(pwd)/bitlbee:/var/lib/bitlbee narfman0/docker-bitlb
 
 Build container with
 ```
-docker build . -t bitlbee
+docker build . -t narfman0/docker-bitlbee
 ```
 
 ## License
