@@ -8,4 +8,5 @@ EXPOSE 6667
 
 VOLUME /var/lib/bitlbee
 
-ENTRYPOINT [ "/usr/sbin/bitlbee" ]
+ADD entrypoint.sh /usr/local/bin/entrypoint.sh
+ENTRYPOINT [ "/usr/local/bin/entrypoint.sh" ]

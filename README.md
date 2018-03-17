@@ -6,18 +6,14 @@ BitlBee brings IM (instant messaging) to IRC clients. It's a great solution for
 people who have an IRC client running all the time and don't want to run an
 additional MSN/AIM/whatever client.
 
-This image allows you to run BitlBee in a completelly containerized environment
+This image allows you to run BitlBee in a completelly containerized environment.
+This includes support for libpurple, which supports many other protocols.
 
 ## Usage
 
-Run BitlBee listening in port 6667 with default config
+Run BitlBee listening on port 6667 with default config and persistent local volume:
 ```
-docker run -p 6667:6667 narfman0/docker-bitlbee -n bitlbee
-```
-
-You may wish to add a local mount (and accompanying chown possible) with
-```
- -v $(pwd)/bitlbee:/var/lib/bitlbee
+docker run -p 6667:6667 -v $(pwd)/bitlbee:/var/lib/bitlbee narfman0/docker-bitlbee -n bitlbee
 ```
 
 Build container with
